@@ -19,9 +19,9 @@ describe('list', function(){
 			id: 749429
 		};
 
-		intrade.getTimeAndSales( options, function(eventClasses){
+		intrade.getTimeAndSales( options, function(timeAndSalesData){
 			
-			listEvent.emit('ready', eventClasses);
+			listEvent.emit('ready', timeAndSalesData);
 			done();
 		});
 	});
