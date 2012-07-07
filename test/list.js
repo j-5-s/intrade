@@ -1,5 +1,5 @@
 /*global it, describe */
-var intrade = require('intrade'),
+var intrade = require('intrade').dataRetrieval,
 	should  = require('should'),
 	assert  = require('assert'),
 	events  = require('events'),
