@@ -1,13 +1,15 @@
 #Intrade API For NodeJS
 
-Designed to connect to Intrade via tha <a href="http://www.intrade.com/v4/misc/help/api/">Intrade API</a>. Includes:
+Designed to connect to Intrade via tha <a href="http://www.intrade.com/v4/misc/help/api/">Intrade API</a>. Please note, I nor this module is affiliated with Intrade, just something i did for fun. Includes:
 * Data Retrieval API (incomplete)
 * Trading API (coming soon)
 
 ## Install
+Currently not in npm. Use git
 <pre>
-	npm install request
-</pre>
+cd node_modules
+git clone https://github.com/jamescharlesworth/intrade.git
+</pre>	
 
 ## Data Retrieval API
 
