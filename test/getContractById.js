@@ -37,9 +37,9 @@ listEvent.on('ready', function(contract){
 		it('should contain 18 attributes', function(done){
 			
 			should.exist(contract);
-			contract.get('currency').should.equal('USD');
-			contract.get('type').should.equal('PX')
-			_.toArray(contract.attributes).length.should.equal(18);
+			should.equal('USD', contract.get('currency'));
+			should.equal('PX', contract.get('type'))
+			should.equal(18, _.toArray(contract.attributes).length);
 		
 			done();
 		});

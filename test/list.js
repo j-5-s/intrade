@@ -30,9 +30,9 @@ describe('list', function(){
 //## Checks the length of the EventClasses returned
 listEvent.on('ready', function(eventClasses){
 	describe('list', function(){
-
+		var total = eventClasses.length;
 		it('should contain 7 eventClasses in dev', function(done){
-			eventClasses.length.should.be.equal(7);
+			should.equal(total, 7);
 			done();
 		});
 	});

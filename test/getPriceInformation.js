@@ -34,8 +34,8 @@ listEvent.on('ready', function(intradeContractInfo){
 		it('should exist', function(done){
 			
 			should.exist(intradeContractInfo);
-			intradeContractInfo.get('close').should.a('number');
-			intradeContractInfo.get('bids').should.a('object');
+			intradeContractInfo.get('close').should.be.a('number');
+			intradeContractInfo.get('bids').should.be.a('object');
 			intradeContractInfo.get('offers').length.should.be.above(0);
 			done();
 		});
